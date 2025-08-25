@@ -1,0 +1,17 @@
+[opener]
+# use `O` to select different open method.
+folder = [
+    { run = 'nvim "$1"', block = true,desc = "neovim", for = "unix" },
+    { run = '''fish -c "lazygit -p "$1""''', block = true,desc = "lazygit", for = "unix" },
+    { run = 'code  "$@"',orphan = true, desc = "vscode" , for = "unix" },
+]
+text = [
+    { run = 'nvim "$1"', block = true,desc = "neovim", for = "unix" },
+    { run = 'code  "$@"',orphan = true, desc = "vscode" , for = "unix" },
+]
+
+[open]
+prepend_rules = [
+    { name = "*/", use = ["folder"] },
+    { mime = "text/*", use = ["text"] },
+]

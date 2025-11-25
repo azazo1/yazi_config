@@ -1,0 +1,11 @@
+[[help.prepend_keymap]]
+on = "/"
+run = "filter"
+
+[[help.prepend_keymap]]
+on = "<C-f>"
+run = "arrow 10"
+
+[[help.prepend_keymap]]
+on = "<C-b>"
+run = "arrow -10"

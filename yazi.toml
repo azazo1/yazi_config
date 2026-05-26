@@ -12,6 +12,6 @@ text = [
 
 [open]
 prepend_rules = [
-    { name = "*/", use = ["folder"] },
+    { url = "*/", use = ["folder"] },
     { mime = "text/*", use = ["text"] },
 ]

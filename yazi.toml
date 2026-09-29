@@ -15,3 +15,21 @@ prepend_rules = [
     { url = "*/", use = ["folder"] },
     { mime = "text/*", use = ["text"] },
 ]
+
+[plugin]
+prepend_preloaders = [
+    { url = "*.docx", run = "qlpreview" },
+    { url = "*.xlsx", run = "qlpreview" },
+    { url = "*.pptx", run = "qlpreview" },
+    { url = "*.doc", run = "qlpreview" },
+    { url = "*.xls", run = "qlpreview" },
+    { url = "*.ppt", run = "qlpreview" },
+]
+prepend_previewers = [
+    { url = "*.docx", run = "qlpreview" },
+    { url = "*.xlsx", run = "qlpreview" },
+    { url = "*.pptx", run = "qlpreview" },
+    { url = "*.doc", run = "qlpreview" },
+    { url = "*.xls", run = "qlpreview" },
+    { url = "*.ppt", run = "qlpreview" },
+]

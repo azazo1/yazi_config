@@ -2,6 +2,16 @@
 on = "/"
 run = "filter"
 
+[[mgr.prepend_keymap]]
+on = ["g", "u"]
+run = "shell 'dust -r . | less -R' --block"
+desc = "查看当前目录磁盘占用"
+
+[[mgr.prepend_keymap]]
+on = ["g", "s"]
+run = "plugin size-sort-toggle"
+desc = "切换大小排序与原有排序"
+
 [[help.prepend_keymap]]
 on = "<C-f>"
 run = "arrow 10"
